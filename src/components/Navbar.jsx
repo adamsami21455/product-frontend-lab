@@ -4,7 +4,7 @@ function Navbar() {
     return (
         <nav>
             <Link to='/'> Homepage </Link>
-            <Link to='/product'> All Products </Link>
+            <Link to='/products'> All Products </Link>
             <Link to='/products/create'> Create Products </Link>
 
 

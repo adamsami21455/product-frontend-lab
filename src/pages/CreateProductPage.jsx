@@ -19,12 +19,17 @@ function CreateProduct() {
     }
 
     async function handleSubmit(event){
+        try {
         event.preventDefault()
         console.log('Form Submitted')
         
-        const createdProduct = await createProduct(productBody)
+        const createdProduct = await createProduct(formData)
 
         navigate('/products')
+            
+        } catch (error) {
+            console.log(error)
+        }
     }
   return (
     <div>

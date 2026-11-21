@@ -18,7 +18,7 @@ async function getProductById(productId){
 }
 
 async function createProduct(productBody){
-    const response = await api.post('/products',productBody)
+    const response = await api.post('/products', productBody)    
 
     return response.data
 }
